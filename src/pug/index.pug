@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png")
+        title Frontend Mentor | Intro component with sign up form
+        link(rel="stylesheet", href="css/styles.css")
+    body
+        main.container
+            header.jumbotron
+                h1.jumbotron__head-text Learn to code by watching others
+                p.jumbotron__sub-text See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+            section.form-section
+                article.banner
+                    p.banner__text Try it free 7 days 
+                        span.thin-txt then $20/mo. thereafter
+                form(action="#" id="form")
+                    section.form-area
+                        input(type="text", name="First Name" placeholder="First Name")
+                        p.form-area__error-txt
+                            em First Name cannot be empty 
+                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg')
+                                g(fill='none' fill-rule='evenodd')
+                                    circle(fill='#FF7979' cx='12' cy='12' r='12')
+                                    rect(fill='#FFF' x='11' y='6' width='2' height='9' rx='1')
+                                    rect(fill='#FFF' x='11' y='17' width='2' height='2' rx='1')
+                    section.form-area
+                        input(type="text", name="Last Name" placeholder="Last Name")
+                        p.form-area__error-txt
+                            em Last Name cannot be empty
+                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg')
+                                g(fill='none' fill-rule='evenodd')
+                                    circle(fill='#FF7979' cx='12' cy='12' r='12')
+                                    rect(fill='#FFF' x='11' y='6' width='2' height='9' rx='1')
+                                    rect(fill='#FFF' x='11' y='17' width='2' height='2' rx='1')
+                    section.form-area
+                        input(type="email", name="Email Address" placeholder="Email Address" required)
+                        p.form-area__error-txt
+                            em Looks like this is not an email
+                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg')
+                                g(fill='none' fill-rule='evenodd')
+                                    circle(fill='#FF7979' cx='12' cy='12' r='12')
+                                    rect(fill='#FFF' x='11' y='6' width='2' height='9' rx='1')
+                                    rect(fill='#FFF' x='11' y='17' width='2' height='2' rx='1')
+                    section.form-area
+                        input(type="password", name="Password" placeholder="Password")
+                        p.form-area__error-txt
+                            em Password can not be empty
+                            svg(width='24' height='24' xmlns='http://www.w3.org/2000/svg')
+                                g(fill='none' fill-rule='evenodd')
+                                    circle(fill='#FF7979' cx='12' cy='12' r='12')
+                                    rect(fill='#FFF' x='11' y='6' width='2' height='9' rx='1')
+                                    rect(fill='#FFF' x='11' y='17' width='2' height='2' rx='1')
+                    button.btn Claim your free trial 
+                    p.submit-txt By clicking the button, you are agreeing to our 
+                        span.red-txt
+                            a(href="#") Terms and Services
+
+        script(src="js/app.js")
